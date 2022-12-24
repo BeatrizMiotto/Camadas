@@ -32,6 +32,6 @@ COMMIT; --confirma a transação
 ROLLBACK; --desfaz a transação
 
 --DUMP DO BANCO DE DADOS SQL
-mysqldump -uroot -p'broot' persistencia > sql/backup.sql;
+mysqldump -u root -p persistencia > sql/backup.sql;
 
 
