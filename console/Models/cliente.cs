@@ -11,7 +11,14 @@ public class Cliente
     public void Salvar()
     {
         var conexao = "Server=localhost;Database=persistencia;Uid=root;Pwd=broot;";
-        using(var connection = new MySqlConnection(conexao));
+        using(var connection = new MySqlConnection(conexao))
+        {
+            connection.Open();
+            var query = $"insert into cliente(nome, email)values('{this.Nome}', '{this.Email}');";
+            var command = new MySqlCommand(query, connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
     }
 
 }
