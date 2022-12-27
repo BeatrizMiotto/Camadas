@@ -1,6 +1,6 @@
 using MySql.Data.MySqlClient;
 
-namespace ConsoleApp.Models;
+namespace Negocio.Models;
 
 public class Cliente
 {

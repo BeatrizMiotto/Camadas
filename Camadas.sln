@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console", "console\console.csproj", "{3A88E19E-6331-4B33-9306-C86E604657DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "web\web.csproj", "{A8E91FCA-FB57-468B-A44F-A31D0E9BF553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "negocio\negocio.csproj", "{8272D15F-64BD-4FFD-8BE0-F88D8A5F4CBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{3A88E19E-6331-4B33-9306-C86E604657DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A88E19E-6331-4B33-9306-C86E604657DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A88E19E-6331-4B33-9306-C86E604657DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E91FCA-FB57-468B-A44F-A31D0E9BF553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E91FCA-FB57-468B-A44F-A31D0E9BF553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E91FCA-FB57-468B-A44F-A31D0E9BF553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E91FCA-FB57-468B-A44F-A31D0E9BF553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8272D15F-64BD-4FFD-8BE0-F88D8A5F4CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8272D15F-64BD-4FFD-8BE0-F88D8A5F4CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8272D15F-64BD-4FFD-8BE0-F88D8A5F4CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8272D15F-64BD-4FFD-8BE0-F88D8A5F4CBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

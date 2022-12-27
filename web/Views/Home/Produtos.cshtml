@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Negocio.Models
+@{
     ViewData["Title"] = "Produtos";
 }
 <h1>@ViewData["Title"]</h1>
@@ -34,6 +35,41 @@
 <div class="input-group mb-3">
 <button class="btn btn-dark">Enviar</button>
 </div>
+</section>
+
+<hr>
+
+<section>
+  <table class="table">
+  <thead class = "text-white bg-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Entrada</th>
+      <th scope="col">Validade</th>
+      <th scope="col">Quantidade</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (Produtos produto in ViewBag.produtos)
+    {
+      <tr>
+        <th scope="row">@produtos.Id</th>
+        <td>@produtos.Nome</td>
+        <td>@produtos.Descricao</td>
+        <td>@produtos.DataCriacao</td>
+        <td>@produtos.DataValidade</td>
+        <td>@produtos.QuantidadeEstoque</td>
+        <td><a href="/produtos/@produtos.Id/editar" class="btn btn-info">Editar</a></td>
+        <td><a href="/produtos/@produtos.Id/excluir" class="btn btn-danger">Excluir</a></td>
+      </tr>
+      
+    }
+    
+  </tbody>
+</table>
 </section>
 
 

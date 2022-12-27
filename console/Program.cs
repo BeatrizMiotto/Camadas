@@ -1,25 +1,26 @@
-﻿using ConsoleApp.Models;
+﻿using ConsoleApp.UIService;
 
-while(true)
+while (true)
 {
-    var cliente = new Cliente();
-    Console.WriteLine("****Cadastro de Clientes****");
-    Console.WriteLine("Nome:");
-    cliente.Nome = Console.ReadLine();
-    Console.WriteLine("E-mail:");
-    cliente.Email = Console.ReadLine();
+    Console.WriteLine("1- Cadastrar cliente");
+    Console.WriteLine("2- Atualizar cliente");
+    Console.WriteLine("3- Listar cliente");
+    Console.WriteLine("4- Sair");
 
+    var menu = Console.ReadLine();
 
-    var produto = new Produtos();
-    Console.WriteLine("****Cadastrar Produtos****");
-    Console.WriteLine("Nome:");
-    produto.Nome = Console.ReadLine();
-    Console.WriteLine("Descrição:");
-    produto.Descricao = Console.ReadLine();
-    Console.WriteLine("Data de entrada do produto:");
-    produto.DataCriacao = Console.ReadLine();
-    Console.WriteLine("Data de validade do produto:");
-    produto.DataValidade = Console.ReadLine();
-    Console.WriteLine("Quantidade no estoque");
-    produto.QuantidadeEstoque = Console.ReadLine();
+    switch(menu)
+    {
+       case "1":
+            ClientesUI.Cadastrar();
+            break;
+       case "2":
+            break;
+       case "3":
+            break;
+       case "4":
+            break;
+       default:
+            break; 
+    }
 }
