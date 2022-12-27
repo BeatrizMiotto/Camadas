@@ -12,15 +12,19 @@ while (true)
     switch(menu)
     {
        case "1":
-            ClientesUI.Cadastrar();
+               ClientesUI.Cadastrar();
             break;
        case "2":
+               ClientesUI.Atualizar();
             break;
        case "3":
+               ClientesUI.Listar();
             break;
        case "4":
-            break;
+               Console.WriteLine("Sair");
+            return;
        default:
+               Console.WriteLine("Digite uma opção valida!");
             break; 
     }
 }

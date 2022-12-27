@@ -38,3 +38,5 @@ C:\Users\usuario\Desktop\Programas Miotto\Camadas\console\obj\Debug\net7.0\refin
 C:\Users\usuario\Desktop\Programas Miotto\Camadas\console\obj\Debug\net7.0\console.pdb
 C:\Users\usuario\Desktop\Programas Miotto\Camadas\console\obj\Debug\net7.0\console.genruntimeconfig.cache
 C:\Users\usuario\Desktop\Programas Miotto\Camadas\console\obj\Debug\net7.0\ref\console.dll
+C:\Users\usuario\Desktop\Programas Miotto\Camadas\console\bin\Debug\net7.0\negocio.dll
+C:\Users\usuario\Desktop\Programas Miotto\Camadas\console\bin\Debug\net7.0\negocio.pdb

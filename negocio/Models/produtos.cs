@@ -13,8 +13,8 @@ public class Produtos
 
     public void SalvarProdutos()
     {
-        var conexao1 = "Server=localhost;Database=persistencia;Uid=root;Pwd=broot;";
-        using(var connection = new MySqlConnection(conexao1))
+        var conexao = "Server=localhost;Database=persistencia;Uid=root;Pwd=broot;";
+        using(var connection = new MySqlConnection(conexao))
         {
             connection.Open();
             var query = $"insert into produtos(nome,  descricao, data_criacao, data_validade, quantidade_estoque )values('{this.Nome}', '{this.Descricao}', '{this.DataCriacao}', '{this.DataValidade}', '{this.QuantidadeEstoque}');";

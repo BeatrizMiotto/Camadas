@@ -414,6 +414,20 @@
             "rid": "win"
           }
         }
+      },
+      "negocio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MySql.Data": "8.0.31",
+          "System.Data.SqlClient": "4.8.5"
+        },
+        "compile": {
+          "bin/placeholder/negocio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/negocio.dll": {}
+        }
       }
     }
   },
@@ -1171,12 +1185,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "negocio/1.0.0": {
+      "type": "project",
+      "path": "../negocio/negocio.csproj",
+      "msbuildProject": "../negocio/negocio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "MySql.Data >= 8.0.31",
-      "System.Data.SqlClient >= 4.8.5"
+      "negocio >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1203,7 +1221,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\negocio\\negocio.csproj": {
+              "projectPath": "C:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\negocio\\negocio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1215,16 +1237,6 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
-        "dependencies": {
-          "MySql.Data": {
-            "target": "Package",
-            "version": "[8.0.31, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.8.5, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
