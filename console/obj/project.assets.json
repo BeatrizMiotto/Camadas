@@ -1203,11 +1203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\console\\console.csproj",
+      "projectUniqueName": "c:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\console\\console.csproj",
       "projectName": "console",
-      "projectPath": "C:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\console\\console.csproj",
+      "projectPath": "c:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\console\\console.csproj",
       "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\console\\obj\\",
+      "outputPath": "c:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1222,8 +1222,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\negocio\\negocio.csproj": {
-              "projectPath": "C:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\negocio\\negocio.csproj"
+            "c:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\negocio\\negocio.csproj": {
+              "projectPath": "c:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\negocio\\negocio.csproj"
             }
           }
         }

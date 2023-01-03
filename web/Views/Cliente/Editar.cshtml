@@ -1,0 +1,34 @@
+﻿@using Negocio.Models
+@{
+    Cliente cliente = @ViewBag.cliente;
+    ViewData["Title"] = "Editar Cliente - cliente.Nome ";
+}
+<h1>@ViewData["Title"]</h1>
+<hr>
+<br><br>
+<section>
+  <div class="card bg-secondary">
+    <div class="card-header bg-warning">
+      Editar @cliente.Nome
+    </div>
+    <div class="card-body">
+    <Form action="/cliente/@cliente.Id/atualizar" method="post">
+      <div class="input-group mb-3">
+        <span class="input-group-text bg-warning" id="basic-addon1">Nome</span>
+        <input type="text" class="form-control" aria-label="nome" aria-describedby="basic-addon1" name="nome" value="@cliente.Nome">
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control"  aria-label="email" aria-describedby="basic-addon2" name="email" value="@cliente.Email">
+        <span class="input-group-text  bg-warning" id="basic-addon2">E-mail</span>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-warning" type="submit">Editar</button>
+      </div>
+    </Form>
+  </div>
+</div>
+</section>
+<hr>
+<br>
+<a href="/cliente" class="btn btn-secondary">Voltar</a>
+

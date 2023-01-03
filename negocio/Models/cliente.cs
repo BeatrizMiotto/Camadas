@@ -8,7 +8,7 @@ public class Cliente
     public string? Nome {get; set;}
     public string? Email {get; set;}
 
-    private static readonly string conexao = "Server=localhost;Database=persistencia;Uid=root;Pwd=broot;";
+    private static readonly string conexao = "Server=localhost;Database=estoque;Uid=root;Pwd=broot;";
 
     public void Salvar()
     {
@@ -32,7 +32,7 @@ public class Cliente
         using(var connection = new MySqlConnection(conexao))
         {
             connection.Open();
-            var query = $"select * from clientes where id = '{idOuEmail}' or email like '%{idOuEmail}%' ";
+            var query = $"select * from cliente where id = '{idOuEmail}' or email like '%{idOuEmail}%' ";
             var command = new MySqlCommand(query, connection);
             var dataReader = command.ExecuteReader();
             
@@ -56,7 +56,7 @@ public class Cliente
         using(var connection = new MySqlConnection(conexao))
         {
             connection.Open();
-            var query = $"select * from clientes";
+            var query = $"select * from cliente";
             var command = new MySqlCommand(query, connection);
             var dataReader = command.ExecuteReader();
             
@@ -73,4 +73,40 @@ public class Cliente
         }
         return clientes;
     }
+
+    public static Cliente? BuscaPorId(int id)
+    {
+        var cliente = new Cliente();
+        using(var connection = new MySqlConnection(conexao))
+        {
+            connection.Open();
+            var query = $"select * from cliente where id = '{id}' ";
+            var command = new MySqlCommand(query, connection);
+            var dataReader = command.ExecuteReader();
+
+            while(dataReader.Read())
+            {
+                cliente = new Cliente{
+                    Id = Convert.ToInt32(dataReader["Id"]),
+                    Nome = dataReader["nome"].ToString(),
+                    Email = dataReader["email"].ToString()
+                };
+            }
+            connection.Close();
+        }
+        return cliente.Id == 0 ? null : cliente;
+    }
+    public static void ExcluirPorId(int id)
+    {
+       using(var connection = new MySqlConnection (conexao))
+        {
+            connection.Open();
+            var query = $"delete from cliente where id ='{id}';";
+    
+            var command = new MySqlCommand(query, connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+    }
+        
 }

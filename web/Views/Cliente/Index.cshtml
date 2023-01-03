@@ -1,0 +1,56 @@
+﻿@using Negocio.Models
+@{
+    ViewData["Title"] = "Pagina do Cliente";
+}
+<h1>@ViewData["Title"]</h1>
+<hr>
+<br><br>
+<section>
+  <div class="card bg-secondary">
+    <div class="card-header bg-warning">
+      Cadastrar cliente
+    </div>
+    <div class="card-body">
+    <Form action="/cliente/cadastrar" method="post">
+      <div class="input-group mb-3">
+        <span class="input-group-text bg-warning" id="basic-addon1">Nome</span>
+        <input type="text" class="form-control" aria-label="nome" aria-describedby="basic-addon1" name="nome">
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control"  aria-label="email" aria-describedby="basic-addon2" name="email">
+        <span class="input-group-text  bg-warning" id="basic-addon2">E-mail</span>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-warning" type="submit">Enviar</button>
+      </div>
+    </Form>
+  </div>
+</div>
+</section>
+<hr>
+<br>
+<section>
+  <table class="table table-warning">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">E-mail</th>
+      <th style="width: 30px;" scope="col"></th>
+      <th style="width: 30px;" scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (Cliente clientes in ViewBag.cliente)
+    {
+      <tr>
+        <td>@clientes.Nome</td>
+        <td>@clientes.Email</td>
+        <td><a href="/cliente/@clientes.Id/editar" class="btn text-white btn-secondary">Editar</a></td>
+        <td><a href="/cliente/@clientes.Id/excluir" class="btn text-white btn-danger">Excluir</a></td>
+      </tr>
+    }
+    
+  </tbody>
+</table>
+</section>
+

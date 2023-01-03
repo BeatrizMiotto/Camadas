@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1hgEiaLxpVqxyuiFoqt/PZWbpUMOpJUsa6dKjU+8gSValib5ac8psANTLz6oNOFSsqMb467f4WHo9tlT9Yh3Ow==",
+  "dgSpecHash": "WyYgF9a0dOz7ahTRrd3kr8Pn3iaCDcVS6Zz+lZioFZ/lwzb3T9t807e5p4yztsrBm4tENFGvsTgasm4rksiWFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\console\\console.csproj",
+  "projectFilePath": "c:\\Users\\usuario\\Desktop\\Programas Miotto\\Camadas\\console\\console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
